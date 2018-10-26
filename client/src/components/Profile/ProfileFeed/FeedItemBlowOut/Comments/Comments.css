@@ -1,0 +1,8 @@
+.comment-input {
+  height: 5vh;
+  width: 20vw;
+  border: none;
+  outline: none;
+  background-color: #f8f8f8;
+  padding-left: 1vw;
+}

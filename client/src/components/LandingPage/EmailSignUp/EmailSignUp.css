@@ -1,0 +1,42 @@
+.submit-button {
+  width: 22vw;
+  height: 4vh;
+  background-color: cornflowerblue;
+  color: white;
+  border-radius: 5%;
+  margin-top: 5vh;
+}
+
+.facebook-button {
+  width: 22vw;
+  height: 4vh;
+  background-color: cornflowerblue;
+  color: white;
+  border-radius: 5%;
+}
+
+.sign-up-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.sign-up-form-item {
+  height: 5vh;
+  width: 22vw;
+  margin-top: 1vh;
+  background-color: #f8f8f8;
+  border: 1px solid rgba(0,0,0,0.1);
+  outline: none;
+}
+
+.sign-up-form-item-error {
+  height: 5vh;
+  width: 22vw;
+  margin-top: 1vh;
+  background-color: rgba(255,0,0,0.1);
+  border: 1px solid rgba(0,0,0,0.1);
+  outline: none;
+}

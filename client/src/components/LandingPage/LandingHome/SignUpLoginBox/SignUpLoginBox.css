@@ -1,0 +1,77 @@
+.sign-in-login-container {
+  max-width: 30vw;
+  max-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: white;
+}
+
+.sign-up-container {
+  width: 27.5vw;
+  height: 85vh;
+  border: 1px solid rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.login-container {
+  width: 27.5vw;
+  height: 10vh;
+  border: 1px solid rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1vh;
+}
+
+.login-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.login-link- {
+  height: 1vh;
+  margin-top: -2vh;
+  margin-bottom:2vh;
+}
+
+.sign-up-divider {
+  width: 100%;
+  max-height: 4vh;
+  color: rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.sign-up-header-container {
+  margin-top: -5vh;
+}
+
+.hr {
+  width: 5vw;
+  margin-top: 2vh;
+}
+
+.email-signup-presenter-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.disclaimer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

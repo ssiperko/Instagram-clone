@@ -1,0 +1,106 @@
+.profile-header{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 75vw;
+  margin-left: 12.5vw;
+}
+
+.profile-header-right{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction:column;
+  margin-left:5vw;
+}
+
+.profile-pic {
+  max-height: 25vh;
+  max-width: 25vw;
+  border: .5px solid rgba(0,0,0,0.1);
+  border-radius: 50%;
+  background: cover;
+  margin-left: 5vw;
+}
+
+.profile-follow-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.profile-follow-items {
+  margin-right: 4vw;
+  font-family: 'Roboto', sans-serif;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.profile-username {
+  font-family: 'Roboto', sans-serif;
+}
+
+.profile-bio-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.update-profile-button{
+  height: 4vh;
+  width: 7vw;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  font-size: .75em;
+  margin-left: 2vw;
+}
+
+.follow-user-button{
+  height: 4vh;
+  width: 7vw;
+  border-radius: 5%;
+  background: none;
+  text-decoration: none;
+  color: #333;
+  font-size: .75em;
+  margin-left: 2vw;
+}
+
+.name-line{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.popup-background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: rgba(0,0,0, 0.1);
+}
+.popup-foreground {
+  position: absolute;
+  left: 35%;
+  right: 35%;
+  top: 25%;
+  bottom: 25%;
+  margin: auto;
+  background: white;
+  border: 1px solid rgba(0,0,0, 0.3)
+}

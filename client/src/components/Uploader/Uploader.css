@@ -1,0 +1,34 @@
+
+.img-container {
+  max-height: 25vh;
+  max-width: 25vw;
+}
+
+.profile-pic {
+  max-height: 25vh;
+  max-width: 25vw;
+  border: .5px solid rgba(0,0,0,0.1);
+  border-radius: 50%;
+  margin-left: 5vw;
+  cursor: pointer;
+}
+
+.photo{
+  display: none;
+}
+
+.poop {
+  height: 25vh;
+  weight: 25vw;
+  border:.5px solid rgba(0,0,0,0.1);
+  border-radius: 50%;
+}
+
+.add-new {
+  max-height: 10vh;
+  max-width: 10vw;
+  border: .5px solid rgba(0,0,0,0.1);
+  border-radius: 50%;
+  margin-left: 5vw;
+  cursor: pointer;
+}

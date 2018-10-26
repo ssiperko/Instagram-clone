@@ -1,0 +1,104 @@
+.submit-button {
+  width: 22vw;
+  height: 4vh;
+  background-color: cornflowerblue;
+  color: white;
+  border-radius: 5%;
+  margin-top: 5vh;
+}
+
+.facebook-button {
+  width: 22vw;
+  height: 4vh;
+  background-color: cornflowerblue;
+  color: white;
+  border-radius: 5%;
+}
+
+.sign-up-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.sign-up-form-item {
+  height: 5vh;
+  width: 22vw;
+  margin-top: 1vh;
+  background-color: #f8f8f8;
+  border: 1px solid rgba(0,0,0,0.1);
+  outline: none;
+}
+
+.sign-up-form-item-error {
+  height: 5vh;
+  width: 22vw;
+  margin-top: 1vh;
+  background-color: rgba(255,0,0,0.1);
+  border: 1px solid rgba(0,0,0,0.1);
+  outline: none;
+}
+
+/*presenter*/
+
+.login-presenter-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #f8f8f8;
+}
+
+.sign-in-login-container {
+  max-width: 30vw;
+  max-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #f8f8f8;
+}
+
+.login-mini-container {
+  width: 27.5vw;
+  height: 50vh;
+  border: 1px solid rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.emailsignup-link-container {
+  width: 27.5vw;
+  height: 10vh;
+  border: 1px solid rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 2vh;
+  background-color: white;
+  text-decoration: none;
+}
+
+.emailsignup-link {
+  text-decoration: none;
+}
+
+.sign-up-header-container {
+  margin-top: -5vh;
+}
+
+.hr {
+  width: 5vw;
+  margin-top: 2vh;
+}

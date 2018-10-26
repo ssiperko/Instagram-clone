@@ -1,0 +1,19 @@
+.page-wrapper{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.settings-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.setting-input-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}

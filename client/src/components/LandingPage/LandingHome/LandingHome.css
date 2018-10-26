@@ -1,0 +1,30 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+.landing-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.sign-up{
+  margin-left: 65vw;
+}
+
+.photo-container {
+  height: 100vh;
+  width: 52vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-img {
+  height: 90vh;
+  width: 30vw;
+}

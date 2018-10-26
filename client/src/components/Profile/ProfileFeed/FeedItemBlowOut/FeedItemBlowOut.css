@@ -1,0 +1,41 @@
+.feed-item-container{
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-img-container{
+  margin: 0;
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.main-img {
+  width:95vh;
+  height: 95vh;
+  object-fit:scale-down;
+}
+
+.comment{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: -5vh;
+}
+
+.user-profile-link-button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

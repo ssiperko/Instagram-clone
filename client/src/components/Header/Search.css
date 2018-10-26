@@ -1,0 +1,8 @@
+.search-input {
+  height: 4vh;
+  width: 16vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  font-size: .7em;
+  background-color: #f8f8f8;
+}
