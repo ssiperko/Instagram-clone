@@ -13,13 +13,13 @@ const userRoutes = require('./routes/user');
 const postRoutes = require('./routes/posts');
 
 cloudinary.config({
-    cloud_name: 'dzwiiqcr2',
-    api_key: '583127865533449',
-    api_secret: 'NRic0s_NMxT9Yhf_gP9ROcawVUk'
+    cloud_name: 'NAME',
+    api_key: 'KEY',
+    api_secret: 'SECRET'
 });
 
 //mongoose.connect("mongodb://localhost:27017/dream", { useNewUrlParser: true });
-mongoose.connect( "mongodb://luke-test:RqilqIhxcNitQkG9@cluster0-shard-00-00-yftga.mongodb.net:27017,cluster0-shard-00-01-yftga.mongodb.net:27017,cluster0-shard-00-02-yftga.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true", { useNewUrlParser: true });
+mongoose.connect( "LINK", { useNewUrlParser: true });
 mongoose.Promise = global.Promise;
 
 app.use(cors());
