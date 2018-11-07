@@ -7,8 +7,7 @@ class Home extends React.Component{
 
   onClick = () => {
     const location = localStorage.getItem('authUser');
-    //this.props.history.push(`/home/${location}`);
-    window.location.href=`http://localhost:3000/home/${location}`;
+    this.props.history.push(`/home/${location}`);
   }
 
 

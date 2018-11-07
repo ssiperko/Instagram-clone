@@ -1,7 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {load_user_feed } from '../../../../Redux/actions/actions';
-import {withRouter, Link} from 'react-router-dom';
+import {withRouter} from 'react-router-dom';
 import CommentLikeBox from './CommentLikeBox/CommentLikeBox';
 import './FeedItemBlowOut.css';
 
@@ -62,8 +62,8 @@ class BlowOut extends React.Component{
   };
 
   render(){
-    const comments = this.state.comments.map((comment)=>(
-      <div className="comment">
+    const comments = this.state.comments.map((comment, i)=>(
+      <div key={i} className="comment">
         <h6> <button className="user-profile-link-button" onClick={this.click_handler.bind(this, comment.author.author_name)}> {comment.author.author_name} </button> {comment.text}</h6>
       </div>
     ))

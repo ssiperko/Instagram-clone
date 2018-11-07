@@ -19,12 +19,18 @@ class Explore extends React.Component{
     console.log(this.state);
   };
 
+
+
+
   like = (id) => {
     const username = localStorage.getItem('authUser');
+    const photo_id = this.props.match.params.photo_id;
     const ID = id;
     const like_data = {
       post_id : ID,
-      username : username
+      username : username,
+      photo: localStorage.getItem('authUserPhoto'),
+      name: localStorage.getItem('authUserName')
     };
     likePost(like_data).then((res)=> {
       console.log(res);
@@ -33,7 +39,7 @@ class Explore extends React.Component{
       }
     }).then((response) => {
       if (response){
-        window.location.href = `http://localhost:3000/explore`;
+        window.location.href = `http://localhost:3000/home/${username}`
       }
     })
     .catch((err) => {

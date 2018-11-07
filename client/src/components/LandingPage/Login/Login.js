@@ -1,8 +1,8 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {login_user} from '../../../Redux/actions/actions';
-import {Link, withRouter} from 'react-router-dom';
-import {loginUser} from '../../services';
+import {withRouter} from 'react-router-dom';
+//import {loginUser} from '../../services';
 import './Login.css';
 
 class Log extends React.Component{
@@ -47,7 +47,6 @@ class Log extends React.Component{
   }
 
   render(){
-    const user = this.state.user;
     return(
       <div>
           <form className="sign-up-form-container">

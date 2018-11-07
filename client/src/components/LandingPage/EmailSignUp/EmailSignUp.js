@@ -17,7 +17,7 @@ class EmailSignUp extends React.Component{
   submit_handler = (e) => {
       const email = this.state.email.toLowerCase();
       const username = this.state.userName.toLowerCase();
-      const password = this.state.password;
+      //const password = this.state.password;
       e.preventDefault();
       addUser({email: email, fullName:this.state.fullName, userName: username, password : this.state.password})
       .then((response)=>{

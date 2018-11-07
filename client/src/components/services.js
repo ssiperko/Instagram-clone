@@ -44,6 +44,9 @@ export const loginUser = (email, password) => {
     localStorage.setItem('authToken', res.token);
     localStorage.setItem('authUser', res.username);
     localStorage.setItem('authUserId', res.id);
+    localStorage.setItem('authUserPhoto', res.userPhoto);
+    localStorage.setItem('authUserName', res.name);
+
     console.log('POOP');
     return res;
   });

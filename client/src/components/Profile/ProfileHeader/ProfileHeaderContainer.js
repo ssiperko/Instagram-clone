@@ -2,11 +2,9 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {load_user} from '../../../Redux/actions/actions';
 import Uploader from '../../Uploader/Uploader';
-import Popup from './FollowPopUp/FollowPopUp';
 import {Link, withRouter} from 'react-router-dom';
-import {followUser, addfollower} from '../../services';
+import {followUser, addfollower, loadUserFeed} from '../../services';
 import './ProfileHeader.css';
-
 
 class ProfileHeaderContainer extends React.Component {
 
@@ -20,7 +18,11 @@ class ProfileHeaderContainer extends React.Component {
   componentDidMount = () => {
     const username = this.props.username;
     this.props.load_user(username);
-    console.log(this.props.profile.userProfile.following + "hhh");
+    loadUserFeed(username).then((res)=>{
+      this.setState({
+        posts : res.length
+      })
+    })
   }
 
   componentDidUpdate(){
@@ -29,7 +31,6 @@ class ProfileHeaderContainer extends React.Component {
         this.setState({
           followers: this.props.profile.userProfile.followers.length,
           following: this.props.profile.userProfile.following.length,
-          posts : this.props.post.feed.length,
           headerDataIsLoaded : true
         })
       }
@@ -50,7 +51,12 @@ class ProfileHeaderContainer extends React.Component {
       if (res.message === "Auth failed"){
         this.props.history.push(`/login`);
       }
-    }).then(this.add_follower());
+    })
+    .then(this.add_follower())
+    .then((res) => {
+      const username = this.props.username;
+      window.location.href=`http://localhost:3000/home/${username}`
+    });
   }
 
   add_follower = () => {
@@ -61,12 +67,6 @@ class ProfileHeaderContainer extends React.Component {
     };
     addfollower(follower_data);
   }
-
-  togglePopup = () => {
-    this.setState({
-      showPopup: !this.state.showPopup
-    });
-  };
 
   render(){
     return(
@@ -104,5 +104,3 @@ const mapStateToProps = state => ({
 const profileHeaderWrapper = connect(mapStateToProps, {load_user})(ProfileHeaderContainer)
 
 export default withRouter(profileHeaderWrapper);
-
-//  {this.state.showPopup ? <Popup follow_data={this.props.profile} closePopup={this.togglePopup.bind(this)}/> : null}

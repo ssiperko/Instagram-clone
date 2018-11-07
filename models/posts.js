@@ -25,7 +25,9 @@ const postSchema = mongoose.Schema({
   ],
   likes : [
     {
-      liked_by: String
+      liked_by: String,
+      photo: String,
+      name: String
     }
   ],
   tags : [

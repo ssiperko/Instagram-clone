@@ -123,7 +123,9 @@ exports.like = (req, res, next) => {
       })
     } else {
         return post.like({
-          liked_by: req.body.username
+          liked_by: req.body.username,
+          photo: req.body.photo,
+          name: req.body.name
         })
       }
     })

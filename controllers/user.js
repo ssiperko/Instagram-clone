@@ -69,7 +69,7 @@ exports.login_user = (req, res, next) => {
               email : user[0].email,
               userId : user[0]._id
             },
-            "JWT_KEY",
+            "paravida",
             {
               expiresIn: "1h"
             }
@@ -79,7 +79,9 @@ exports.login_user = (req, res, next) => {
             message: 'Auth successful',
             token : token,
             username : user[0].username,
-            id : user[0]._id
+            id : user[0]._id,
+            userPhoto: user[0].photo,
+            name: user[0].name
           });
         }
         return res.status(401).json({

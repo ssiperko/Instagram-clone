@@ -24,10 +24,11 @@ class SignUpLoginBox extends React.Component {
                     </div>
                     <EmailSignUp />
                     <div className="disclaimer">
-                      <p><strong> * </strong>This is not the real instagram <br /><strong>Do not </strong>use any personal information<br /></p>                    </div>
+                        <p>By signing up, you agree to our <br /><strong>Terms, Data Policy </strong> and <strong>Cookies <br />Policy.</strong></p>
+                    </div>
                 </div>
                 <div className="login-container">
-                    <h5 className='login-link'>Have an account? <br /><Link to ='./login' className='login-link-'><h3> log in</h3></Link></h5>
+                    <h5>Have an account?<Link to ='./login'><h3>log in</h3></Link></h5>
                 </div>
             </div>
         </Fragment>

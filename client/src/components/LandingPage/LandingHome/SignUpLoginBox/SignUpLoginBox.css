@@ -27,21 +27,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 1vh;
-}
-
-.login-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
-.login-link- {
-  height: 1vh;
-  margin-top: -2vh;
-  margin-bottom:2vh;
+  margin-top: 2vh;
 }
 
 .sign-up-divider {
@@ -68,10 +54,4 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.disclaimer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
